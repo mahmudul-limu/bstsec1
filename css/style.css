@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif; 
+
+*/
+/* ----------- 1.default-css----------- */
+body{
+    font-family: 'Roboto', sans-serif;   
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+.section-padding-top{
+    padding-top: 100px;
+}
+
+.section-padding-bottom{
+    padding-bottom: 100px;
+}
+.section-padding{
+    padding: 100px 0px;
+}
+
+
+/*----------section-title----------*/
+.section-title{
+    text-align: center;
+}
+.section-title h6 {
+    color: #F93E45;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.section-title h3 {
+    color: #18253E;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+
+
+/*-----------featured-item--------------------*/
+.featured-item-1{
+    background-image: url(../img/apartment3.jpg);
+}
+.featured-item-2{
+    background-image: url(../img/apartment1.jpg);
+}
+.featured-item-3{
+    background-image: url(../img/apartment2.jpg);
+}
+.featured-item{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    position: relative;
+    height: 500px;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 1;
+    transition: .4s;
+    margin-top: 20px;   
+}
+
+.featured-item:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #18253e 1%, rgba(255, 255, 255, 0) 93%);
+    border-radius: 10px;
+    z-index: -1; 
+}
+
+.featured-content {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    color: #fff;
+    transition: .4s;  
+}
+
+.featured-content h4 {
+    font-size: 22px;
+    line-height: 26.4px;
+}
+
+.featured-content span {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.featured-content h4:hover{
+    color: #F93E45;
+    cursor: pointer;
+}
+.featured-content span:hover{
+    color: #F93E45;
+    cursor: pointer;
+}
+
+.featured-content ul{
+    padding: 0px;
+}
+
+.featured-content ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    border-right: 1px solod #ddd;
+}
+
+.featured-content ul li:first-child{
+    padding-left: 0px;
+}
+
+.featured-btn {
+    position: relative;
+    background-color: #F93E45;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    margin-left: 0px;
+    transition: .3s;
+    top: 410px;
+    left: -35px;
+    visibility: hidden;
+    z-index: -2;
+}
+
+.featured-btn:hover{
+    background-color: #18253e;
+    color: #ddd;   
+}
+
+.featured-item:hover .featured-btn{
+    left: 0px;
+    visibility: visible;
+    transition: .3s;
+    z-index: 1;
+}
+
+.featured-item:hover .featured-content{
+    bottom: 65px ;
+}
+
+
